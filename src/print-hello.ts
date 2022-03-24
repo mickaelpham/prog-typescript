@@ -18,5 +18,7 @@ const prefixFor = (locale: Locale) => {
 const sayHello = (name: string, locale: Locale) =>
   `${prefixFor(locale)} ${name}`
 
-export const printHello = (w: Writer, name: string, locale: Locale) =>
+const printHello = (w: Writer, name: string, locale: Locale) =>
   w.log(sayHello(name, locale))
+
+export default printHello

@@ -1,4 +1,4 @@
-import { printHello } from './print-hello'
+import printHello from './print-hello'
 
 class StubWriter {
   #lastReceived: string | null = null
