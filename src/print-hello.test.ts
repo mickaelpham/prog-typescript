@@ -1,10 +1,14 @@
 import { printHello } from './print-hello'
 
 class StubWriter {
-  lastReceived: string | null = null
+  #lastReceived: string | null = null
 
   log(msg: string) {
-    this.lastReceived = msg
+    this.#lastReceived = msg
+  }
+
+  get lastReceived() {
+    return this.#lastReceived
   }
 }
 
