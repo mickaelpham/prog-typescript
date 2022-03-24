@@ -1,3 +1,3 @@
 # Programming TypeScript
 
-Making your JavaScript Applications Scale
+Keep track of my current learning of TypeScript
