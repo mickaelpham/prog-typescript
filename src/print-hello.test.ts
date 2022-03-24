@@ -24,7 +24,7 @@ describe('printHello', () => {
   })
 
   test('defaults to en-US in case of unknown locale', () => {
-    // @ts-expect-error
+    // @ts-expect-error: Passing incorrect value to function on purpose
     printHello(writer, 'Marc', 'unknown-locale')
 
     expect(writer.lastReceived).toEqual('Hello Marc')
